@@ -3,7 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <title>React from Scratch</title>
   </head>
-  <body></body>
+  <body>
+    <h1>hello world</h1>
+    <div id="app"></div>
+    <script type="text/babel">
+      let day = "monday";
+      let greeting = `happy ${day}`;
+      function App() {
+        return (
+          <>
+            <h2>{greeting}</h2>
+          </>
+        );
+      }
+      //   const app = document.getElementById("app");
+      //   app.innerHTML = ` <h2>${greeting}</h2>`;
+      const root = ReactDOM.createRoot(<App />);
+      root.render(greeting);
+    </script>
+  </body>
 </html>
