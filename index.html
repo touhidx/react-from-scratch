@@ -17,21 +17,23 @@
   </head>
   <body>
     <h1>hello world</h1>
-    <div id="app"></div>
-    <script type="text/babel">
+    <div id="app">
+      <script type="text/babel" data-type="module" src="./app.jsx"></script>
+    </div>
+    <!-- <script type="text/babel">
       let day = "monday";
       let greeting = `happy ${day}`;
-      function App() {
-        return (
-          <>
-            <h2>{greeting}</h2>
-          </>
-        );
-      }
+      //   function App() {
+      //     return (
+      //       <>
+      //         <h2>{greeting}</h2>
+      //       </>
+      //     );
+      //   }
       //   const app = document.getElementById("app");
       //   app.innerHTML = ` <h2>${greeting}</h2>`;
-      const root = ReactDOM.createRoot(<App />);
+      const root = ReactDOM.createRoot(app);
       root.render(greeting);
-    </script>
+    </script> -->
   </body>
 </html>
